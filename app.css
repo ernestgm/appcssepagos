@@ -83,8 +83,7 @@
 
     header .logo{}
     header .logo img{
-        max-width: 50px;
-        width: 100%;
+        height: 50px;
     }
 
     header.site-header.fixed{
@@ -93,6 +92,8 @@
 
     header.site-header.fixed .logo img{
         mix-blend-mode: multiply;
+        height: 27px;
+        margin-top: -9px;
     }
 
 /*  Main
