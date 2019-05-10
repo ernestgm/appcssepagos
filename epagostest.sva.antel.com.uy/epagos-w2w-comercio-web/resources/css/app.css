@@ -94,6 +94,16 @@
         mix-blend-mode: multiply;
         height: 27px;
         margin-top: -9px;
+        background white;
+    }
+
+    @media (max-width: 420px){
+        header.site-header {
+            margin-top: 32px;
+        }
+        header .logo img{
+            height: 45px;
+        }
     }
 
 /*  Main
@@ -109,6 +119,7 @@
     @media (max-width: 420px){
         main{
             padding: 0;
+            margin-top:90px
         }
     }
 
@@ -293,6 +304,12 @@
 
     footer .logo img{
         width: 100%;
+    }
+
+    @media (max-width: 420px){
+        footer{
+            display: none;
+        }
     }
 
 /*  Hr
@@ -601,6 +618,18 @@
     @media (max-width: 460px){
         .wrap-button{
             margin: 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            padding: 19px;
+            left: 0;
+            border: 1px solid #ccc;
+        }
+        .wrap-button .button,
+        .wrap-button .ui-button{
+            /*margin: 20px 0 10px 0;*/
+            margin: 10px auto 0 auto;
+            display: block;
         }
     } 
 
