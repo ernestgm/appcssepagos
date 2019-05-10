@@ -272,44 +272,27 @@
 /*  Footer
     ------------------------------------------ */
     footer {
-        border-top: 1px solid #D3D7E0;
+        background: #edecec;
         padding: 25px 0;
         z-index: 1;
-        margin-top: 50px;
     }
 
     footer p{
-        color: #909090;
+        color: #002057;
         font-family: "Roboto Condensed", sans-serif;
-        font-size: 13px;
+        font-size: 16px;
         font-weight: 300;
         margin: 0;
+        text-transform: uppercase;
     }
 
     footer .logo{
         margin: 0 10px;
-        width: 60px;
+        width: 40px;
     }
 
     footer .logo img{
         width: 100%;
-    }
-
-    footer .subtitle{
-        width: 60%;
-    }
-    footer .terms{
-        padding: 5px 0;
-        position: absolute;
-        right: 15px;
-    }
-    footer .terms a{
-        font-size: 13px;
-    }
-
-    footer .row{
-        position: relative;
-        padding: 0px 8px;
     }
 
 /*  Hr
@@ -357,7 +340,7 @@
         flex: 0 0 auto;
         width: auto;
         max-width: none;
-    }
+    }      
 
 /*  Box
     ------------------------------------------ */
@@ -376,13 +359,6 @@
         border-bottom: 1px solid #cecece;
         text-align: left;
         padding: 15px 30px;
-    }
-
-    .box .ui-widget-header.short-bottom-border,
-    .box header.short-bottom-border{
-        margin-right: 30px;
-        margin-left: 30px;
-        padding: 15px 0 !important;
     }
 
     .box .ui-panel-footer,
@@ -480,18 +456,14 @@
         .box-afiliacion{
             flex-direction: column;
         }
-    }
+    }    
 
 /*  Box + Section Footer
     ------------------------------------------ */
     .section-footer {
         display: flex;
         align-items: center;
-        padding: 0 30px 25px !important;
-    }
-
-    .section-footer a{
-        text-decoration: none;
+        padding: 0 30px 30px !important;
     }
 
     @media (max-width: 768px) {
@@ -519,7 +491,6 @@
     .header-section.header-inline h1{
         font-size: 22px;
         margin-right: 10px;
-        color: #162456;
     }
 
     .header-section.header-inline img{
@@ -530,7 +501,7 @@
     @media (max-width: 640px) {
         .header-section.header-inline{
             align-items: flex-start;
-            flex-direction: column;
+            flex-direction: column;            
         }
     }
 
@@ -575,17 +546,6 @@
     .form-group .img-card.visa{         background: url('../logos_financieras/visa.png') center center; }
     .form-group .img-card.mastercard{   background: url('../logos_financieras/mastercard.png') center center; }
 
-/*  Form Inputs
-    ------------------------------------------ */
-    .form-group .ui-inputtext{
-
-    }
-
-    .form-group .ui-inputtext.small-input{
-        width: 136px;        
-    }
-
-
 /*  Buttons
     ------------------------------------------ */
     .btn-link{
@@ -600,18 +560,6 @@
     .btn-link:hover,
     .btn-link:focus{
         color: #024168;
-    }
-
-    .ui-button.ui-state-default{
-        padding: 10px 32px !important;
-    }
-
-    .ui-button.button-link.button-small {
-        padding: 0 !important;
-    }
-    .ui-button.button-link.button-small span {
-        text-transform: capitalize;
-        font-size: 14px;
     }
 
     @media (max-width: 460px){
@@ -654,7 +602,7 @@
         .wrap-button{
             margin: 0;
         }
-    }
+    } 
 
 /*  Box coutas
     ------------------------------------------ */
@@ -705,7 +653,7 @@
 
     .ui-icon-minusthick{
         background: url(../assets/arrow-up.svg) no-repeat !important;
-    }
+    }    
 
 /*  Messages
     ------------------------------------------ */
@@ -719,25 +667,9 @@
         margin-bottom: 15px;
     }
 
-    .ui-messages .ui-messages-info{
-        background: #c9deae;
-    }
-
-    .ui-messages .ui-messages-error span,
-    .ui-messages .ui-messages-info span{
+    .ui-messages .ui-messages-error .ui-messages-error-detail{
         font-family: "Roboto Condensed", sans-serif;
-        font-size: 18px;
-    }
-
-    .short-message{
-        font-size: 14px;
-        padding-left: 15px;
-    } 
-
-    .short-message.success{
-        color: #326024;
-        background-image: url(../assets/ico-success.png);
-        background-repeat: no-repeat;
+        font-size: 16px;
     }
 
 /*  Medio pago
@@ -802,7 +734,7 @@
     }
 
     aside .medio-pago{}
-    aside .medio-pago img{
+    aside .medio-pago img{ 
         height: 43px;
         width: 100%;
     }
@@ -860,7 +792,7 @@
     }
 
 /*  Container small
-    ------------------------------------------ */
+    ------------------------------------------ */    
     .container-small{
         max-width: 600px;
     }
@@ -935,7 +867,15 @@
         }
     }
 
-    @media (max-width: 800px){
+    @media (max-width: 800px) {
+
+        .imagen-mp {
+            min-width:100px;
+            max-width: 160px;
+            display: block;
+            margin: 0 auto;
+        }
+
         .talon img {
             width: 100%;
         }
@@ -1051,7 +991,7 @@
         align-items: center;
         display: flex;
         color: #337ab7;
-        font-size: 12px !important;
+        font-size: 12px !important;        
     }
 
     .ico-help span::before {
@@ -1070,7 +1010,7 @@
         align-items: center;
         justify-content: center;
         font-weight: 600;
-    }
+    }   
 
     .ico-close{
         background: url(../assets/ico-close.svg) no-repeat 50% 50%;
@@ -1100,7 +1040,7 @@
         .ico-help{
             display: none;
         }
-    }
+    } 
 
 /*  Link Volver
     ------------------------------------------ */
@@ -1173,36 +1113,3 @@
         margin-top: 5px;
         color: #ababab;
     }
-
-
-/*  Class
-    ------------------------------------------ */
-    .txt-big{  font-size: 16px; }
-    .txt-cond{ font-family: "Roboto Condensed", sans-serif; }
-
-/* Padding
-   ------------------------------------------- */
-
-    .no-padding-lr{
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-    }
-
-    .padding-long{
-        padding: 0 0 132px 0 !important;
-    }
-
-    .padding-medium{
-        padding: 0 0 10px 0 !important;
-    }
-
-    .padding-small{
-        padding: 0 0 10px 0 !important;
-    }
-
-/* Bold
-   ------------------------------------------- */
-
-span b, p b{
-    font-weight: bold !important;
-}
