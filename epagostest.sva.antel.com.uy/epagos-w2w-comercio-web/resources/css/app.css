@@ -416,6 +416,12 @@ hr {
     margin: 0 0 20px 0;
 }
 
+.box .ui-widget-header {
+    padding: 20px 0 !important;
+    border-bottom: 1px solid #cecece;
+    margin: 0 20px;
+}
+
 .box .ui-widget-header,
 .box header {
     text-align: left;
@@ -431,7 +437,7 @@ hr {
 
 .box .ui-panel-footer,
 .box footer {
-    padding: 0 15px;
+    padding: 0 20px;
 }
 
 .box .ui-widget-header span {
@@ -464,6 +470,10 @@ hr {
         border-radius: 0;
         height: 100%;
     }
+    .box .ui-widget-header {
+        margin:0;
+        padding: 15px !important;
+    }
 }
 
 .box h3, .box h3 * {
@@ -482,6 +492,44 @@ hr {
     }
 }*/
 
+/* Box + Table*/
+.box .ui-datatable-tablewrapper{
+    margin: 0 20px;
+}
+
+.box .ui-datatable-tablewrapper table{
+
+}
+
+.box .ui-datatable-tablewrapper table tr{
+
+}
+
+.box .ui-datatable-tablewrapper table tr td{
+    padding: 15px;
+}
+
+.box .ui-datatable table tr.ui-widget-content:last-child {
+    border-bottom: 1px solid #cecece !important;
+}
+.box .ui-datatable .ui-datatable-data tr.ui-state-highlight {
+    background: #fff0f7;
+    border: none;
+    border-top: 2px solid #FF9c44;
+    border-bottom: 2px solid #FF9c44 !important;
+    text-shadow: none;
+}
+.box .ui-datatable .ui-datatable-data tr.ui-state-highlight .logo-medio-pago, .ui-datatable .ui-datatable-data tr.ui-state-highlight .logos-grupo-2, .ui-datatable .ui-datatable-data tr.ui-state-highlight .logos-grupo-3 {
+    border: 2px solid #FF9c44;
+}
+@media (max-width: 460px) {
+    .box .ui-datatable-tablewrapper{
+        margin: 0;
+    }
+    .box .ui-datatable-tablewrapper table tr td {
+        padding: 15px 0;
+    }
+}
 /*  Box + Section
     ------------------------------------------ */
 .box section {
@@ -910,7 +958,7 @@ hr {
 
 .logo-medio-pago {
     background: white;
-    border: 1px solid #337ab7;
+    border: 2px solid #cecece;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -1007,9 +1055,9 @@ aside .logos-grupo-3:focus {
     ------------------------------------------ */
 .nuevo-medio {
     /* border-bottom: 1px solid #cecece; */
-    border-top: 1px solid #cecece;
+    /* border-top: 1px solid #cecece; */
     margin: 0;
-    padding: 15px 0;
+    padding: 15px;
 }
 
 .nuevo-medio a {
@@ -1060,11 +1108,11 @@ aside .logos-grupo-3:focus {
 
 @media (max-width: 460px) {
     .nuevo-medio {
-        border-top: 1px solid #cecece;
         margin: 0;
-        padding: 15px;
+        padding: 0px 15px;
         margin-right: -15px;
         margin-left: -15px;
+        margin-bottom: 150px;
     }
 }
 
