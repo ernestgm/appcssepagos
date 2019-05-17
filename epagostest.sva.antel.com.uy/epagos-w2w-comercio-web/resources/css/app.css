@@ -509,6 +509,7 @@ hr {
 
 .box .ui-datatable-tablewrapper table tr td{
     padding: 15px;
+    padding-bottom: 10px;
 }
 
 .box .ui-datatable table tr.ui-widget-content:last-child {
@@ -777,7 +778,7 @@ hr {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    padding: 0;
+    padding: 8px;
     background: #fbfbfb;
 }
 .ui-commandlink.fixed-top{
@@ -991,7 +992,8 @@ hr {
     max-width: 80px;
     width: 100%;
     padding: 0 5px;
-    height: 59px;
+    height: 57px;
+    display: flex;
 }
 
 .logo-medio-pago img {
