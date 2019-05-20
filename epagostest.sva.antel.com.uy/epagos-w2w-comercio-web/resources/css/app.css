@@ -416,6 +416,10 @@ hr {
     margin: 0 0 20px 0;
 }
 
+.ui-panel.ui-widget.ui-widget-content.ui-corner-all.box{
+    border: 2px solid rgba(99, 99, 99, 0.25);
+}
+
 .box .ui-widget-header {
     padding: 20px 0 !important;
     border-bottom: 1px solid #cecece;
@@ -462,7 +466,7 @@ hr {
 }
 @media (max-width: 460px) {
     .box{
-        border: none;
+        border: none !important;
         border-radius: 0;
         margin: 0;
         margin-bottom: 150px;
@@ -943,22 +947,28 @@ hr {
 }
 
 .ui-messages .ui-messages-error {
-    background: #f5d5d5;
+    background: #ffffff;
     border-radius: 5px;
     border: none;
     padding: 15px;
     margin: 0;
     margin-bottom: 15px;
+    border: 2px solid #f1bdbd;
 }
 
 .ui-messages .ui-messages-info {
-    background: #c9deae;
+    background: #fff;
+    border: 2px solid #c9deae;
 }
 
 .ui-messages .ui-messages-error span,
 .ui-messages .ui-messages-info span {
     font-family: "Roboto Condensed", sans-serif;
     font-size: 18px;
+}
+.ui-messages .ui-messages-error-detail{
+    margin-left: 12px;
+    display: block;
 }
 
 .short-message {
@@ -970,6 +980,17 @@ hr {
     color: #326024;
     background-image: url(../assets/ico-success.png);
     background-repeat: no-repeat;
+}
+
+@media (max-width: 460px) {
+    .ui-messages {
+        margin: 0 15px;
+    }
+    .ui-messages .ui-messages-error-detail{
+    margin: 0;
+    padding: 0 15px;
+    font-size: 14px !important;
+    }
 }
 
 /*  Medio pago
