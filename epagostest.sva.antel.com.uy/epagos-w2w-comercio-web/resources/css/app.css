@@ -105,7 +105,6 @@ header.site-header p label{
 
 header.site-header.fixed {
     background: #e5e5e5;
-    margin: 0;
 }
 
     header.site-header.fixed .logo img{
@@ -115,7 +114,7 @@ header.site-header.fixed {
 
     @media (max-width: 420px){
         header.site-header {
-            margin-top: 40px;
+            margin-top: 40px !important;
             padding-right: 15px;
         }
         header .logo img{
@@ -130,6 +129,15 @@ main {
     margin-top: 105px;
     z-index: 2;
     display: block;
+}
+main:after {
+    content: " ";
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    background: #fbfbfb;
+    top:0;
+    left: 0;
 }
 
     @media (max-width: 420px){
@@ -222,6 +230,9 @@ aside .ui-button {
     aside {
         position: relative;
         top: 0;
+    }
+    aside#panelResumenAside {
+        margin-bottom: 100px;
     }
 }
 
@@ -642,6 +653,12 @@ hr {
     .box-afiliacion {
         flex-direction: column;
     }
+
+    .box-afiliacion .afiliacion-estado {
+        max-width: 140px;
+        position: absolute;
+        right: 0;
+    }
 }
 
 /*  Box + Section Footer
@@ -823,7 +840,7 @@ hr {
 @media (max-width: 460px) {
     .btn-link {
         display: block;
-        margin: 10px;
+        margin: 0 15px;
     }
 
     .fixed-top{
@@ -1464,8 +1481,10 @@ aside .logos-grupo-3:focus {
 
 .link-volver{
     position: fixed;
-    top: 10px;
-    padding: 0;
+    top: 0;
+    padding: 12px 0;
+    z-index: 10;
+    display: block;
 }
 
 /*  Flex
