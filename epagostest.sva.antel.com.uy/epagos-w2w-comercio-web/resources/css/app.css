@@ -475,7 +475,6 @@ hr {
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 400;
     font-size: 20px;
-    width: 100%;
 }
 
 .box .ui-panel.ui-widget.ui-widget-content{
@@ -959,7 +958,7 @@ hr {
 }
 
 .panel-collapse .ui-icon {
-    display: none;
+    /* display: none; */
     margin-top: 10px;
     height: 15px;
     width: 15px;
