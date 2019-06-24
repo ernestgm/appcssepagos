@@ -535,6 +535,10 @@ hr {
 
 }
 
+.box .ui-datatable-tablewrapper table tr:not(.ui-datatable-selectable){
+    background: #e2e2e2;
+}
+
 .box .ui-datatable-tablewrapper table tr td{
     padding: 15px;
     padding-bottom: 10px;
@@ -681,7 +685,7 @@ hr {
 @media (max-width: 768px) {
     .section-footer {
         flex-direction: column;
-        padding: 0 30px 30px !important;
+        padding: 0 30px 10px !important;
     }
 }
 
@@ -880,8 +884,9 @@ hr {
 
 .wrap-button p {
     font-family: "Roboto Condensed", sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     margin: 0;
+    margin-top: 20px;
 }
 
 .wrap-button .button,
