@@ -120,6 +120,9 @@ header.site-header.fixed {
         header .logo img{
             height: 45px;
         }
+        header .logo{
+            margin-left: 15px;
+        }
     }
 
 /*  Main
@@ -145,6 +148,7 @@ main:after {
             padding: 0;
             margin-top: 95px;
             background: none;
+            margin-bottom: 190px;
         }
     }
 
@@ -491,7 +495,6 @@ hr {
         border: none !important;
         border-radius: 0;
         margin: 0;
-        margin-bottom: 190px;
     }
     .box .ui-panel.ui-widget.ui-widget-content{
         border: none;
@@ -543,7 +546,7 @@ hr {
 }
 
 .box.panel-collapse .ui-datatable table tr.ui-widget-content:last-child {
-    border-bottom: none !important;
+    /* border-bottom: none !important; */
 }
 
 .box .ui-datatable table tr.ui-widget-content.ui-state-highlight:last-child {
@@ -652,12 +655,14 @@ hr {
 @media (max-width: 768px) {
     .box-afiliacion {
         flex-direction: column;
+        position: relative;
     }
 
     .box-afiliacion .afiliacion-estado {
-        max-width: 140px;
+        max-width: 120px;
         position: absolute;
         right: 0;
+        top: -4px;
     }
 }
 
@@ -967,6 +972,10 @@ hr {
 
 .panel-collapse .nuevo-medio {
     border-bottom: none;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding-top: 8px !important;
 }
 
 .ui-icon-plusthick {
@@ -1190,9 +1199,10 @@ aside .logos-grupo-3:focus {
 @media (max-width: 460px) {
     .nuevo-medio {
         margin: 0;
-        padding: 0px 15px;
+        padding: 0 16px 15px !important;
         margin-right: -15px;
         margin-left: -15px;
+        margin-top: -5px;
     }
 }
 
@@ -1454,6 +1464,7 @@ aside .logos-grupo-3:focus {
         height: 30px;
         top: 10px;
         right: 20px;
+        z-index: 9999;
     }
     .ico-close:before{
         display: none;
