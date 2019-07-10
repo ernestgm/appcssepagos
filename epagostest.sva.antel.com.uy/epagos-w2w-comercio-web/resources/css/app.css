@@ -670,10 +670,12 @@ hr {
 
 .box-afiliacion .desc-afiliacion{float: left;width: 100%;margin-top: 1px;line-height: 0.5;}
 
-.box .ui-datatable-tablewrapper table tr:not(.ui-datatable-selectable) .box-afiliacion .desc-afiliacion{margin-top: 10px;}
+.box .ui-datatable-tablewrapper table tr:not(.ui-datatable-selectable) .box-afiliacion .desc-afiliacion{margin-top: 10px;color: #8e8e8e;}
+.box .ui-datatable-tablewrapper table tr:not(.ui-datatable-selectable) .box-afiliacion .desc-afiliacion span{color: #8e8e8e;}
 .box .ui-datatable-tablewrapper table tr:not(.ui-datatable-selectable) .box-afiliacion .afiliacion-estado{top: -10px;}
 .box .ui-datatable-tablewrapper table tr:not(.ui-datatable-selectable) .box-afiliacion .txt-cond:not(.desc-afiliacion){
     margin-top: -27px;
+    color: #9e9d9d;
 }
 
 @media (max-width: 768px) {
