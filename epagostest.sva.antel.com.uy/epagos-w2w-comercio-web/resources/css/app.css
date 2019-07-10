@@ -638,7 +638,7 @@ hr {
     /* justify-content: space-between; */
     position: relative;
     width: 100%;
-    height: 64%;
+    height: 22px;
     display: inline-block;
 }
 
@@ -650,25 +650,37 @@ hr {
     margin-right: 5px;
 }
 
+
+
 .box-afiliacion .afiliacion-estado {
-    max-width: 170px;
-    font-size: 12px;
-    text-align: right;
-    line-height: 14px;
+    font-size: 11px;
+    line-height: 1;
+    display: block;
+    text-transform: uppercase;
+    padding-top: 4px;
+    position: absolute;
+    left: 0;
+    top: -16px;
 }
 
-.box-afiliacion .txt-cond{
+.box-afiliacion .txt-cond:not(.desc-afiliacion){
     float: right;
-    margin-top: -10px;
+    margin-top: -19px;
 }
 
-.box-afiliacion .desc-afiliacion{float: left;width: 100%;}
+.box-afiliacion .desc-afiliacion{float: left;width: 100%;margin-top: 1px;line-height: 0.5;}
+
+.box .ui-datatable-tablewrapper table tr:not(.ui-datatable-selectable) .box-afiliacion .desc-afiliacion{margin-top: 10px;}
+.box .ui-datatable-tablewrapper table tr:not(.ui-datatable-selectable) .box-afiliacion .afiliacion-estado{top: -10px;}
+.box .ui-datatable-tablewrapper table tr:not(.ui-datatable-selectable) .box-afiliacion .txt-cond:not(.desc-afiliacion){
+    margin-top: -27px;
+}
 
 @media (max-width: 768px) {
     .box-afiliacion {
         flex-direction: column;
         position: relative;
-        margin-top: -10px;
+        margin-top: -17px;
         margin-left: -5px;
     }
 
@@ -676,11 +688,13 @@ hr {
         max-width: 110px;
         position: absolute;
         right: 0px;
-        top: 2px;
+        top: -5px !important;
+        text-align: right;
+        left: auto;
     }
     .box-afiliacion .txt-cond{
-        float: left;
-        margin: 0;
+        float: left !important;
+        margin: 0 !important;
     }
 
     .box-afiliacion .desc-afiliacion{float: left;width: 100%;}
