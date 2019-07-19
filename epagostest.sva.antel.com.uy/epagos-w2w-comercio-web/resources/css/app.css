@@ -1668,3 +1668,7 @@ aside .logos-grupo-3:focus {
 span b, p b {
     font-weight: bold !important;
 }
+
+.negative-top{
+    margin-top: -55px !important;
+}
