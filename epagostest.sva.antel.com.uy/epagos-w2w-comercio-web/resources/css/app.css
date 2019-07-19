@@ -450,7 +450,7 @@ hr {
 .box .ui-widget-header {
     padding: 20px 0 !important;
     border-bottom: 1px solid #cecece;
-    margin: 0 20px;
+    margin: -2px 20px;
 }
 
 .box .ui-widget-header,
