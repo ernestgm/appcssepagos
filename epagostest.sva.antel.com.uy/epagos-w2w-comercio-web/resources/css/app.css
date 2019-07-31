@@ -498,6 +498,7 @@ hr {
 .box header {
     text-align: left;
     padding: 20px 15px 15px;
+    position: relative;
 }
 
 .box.short-bottom-border .ui-widget-header,
@@ -791,8 +792,7 @@ hr {
 
 /*  Box + Section
     ------------------------------------------ */
-.header-section {
-}
+.header-section {}
 
 .header-section h1 {
     display: inline;
@@ -802,8 +802,10 @@ hr {
 
 .header-section img {
     float: right;
-    margin-top: 5px;
     width: 90px;
+    position: absolute;
+    right: 0;
+    top: 25px;
 }
 
 .header-section.header-inline {
@@ -819,7 +821,6 @@ hr {
 
 .header-section.header-inline img {
     margin: 0;
-    margin-top: 5px;
     display: inline-block;
 }
 
