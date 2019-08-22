@@ -579,6 +579,7 @@ hr {
 
 .box .ui-datatable-tablewrapper table tr:not(.ui-datatable-selectable){
     background: #e2e2e2;
+    overflow: visible;
 }
 
 .box .ui-datatable-tablewrapper table tr td{
@@ -619,6 +620,7 @@ hr {
 
     .box .ui-datatable-tablewrapper table tr:not(.ui-datatable-selectable) td{
         padding: 18px 0 0;
+        overflow: visible;
     }
 }
 /*  Box + Section
@@ -739,7 +741,7 @@ hr {
 
     .box-afiliacion .afiliacion-estado {
         position: absolute;
-        top: -26px !important;
+        top: -23px !important;
         text-align: right;
         left: -88px;
         line-height: 1.2;
