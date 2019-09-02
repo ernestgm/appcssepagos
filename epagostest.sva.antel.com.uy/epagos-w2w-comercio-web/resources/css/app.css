@@ -582,6 +582,14 @@ hr {
     overflow: visible;
 }
 
+.box .ui-datatable-tablewrapper table tr:not(.ui-datatable-selectable) .logo-medio-pago:focus{
+    border: 2px solid #cecece;
+}
+
+.box .ui-datatable-tablewrapper table tr:not(.ui-datatable-selectable) .logo-medio-pago:hover{
+    border: 2px solid #cecece;
+}
+
 .box .ui-datatable-tablewrapper table tr td{
     padding: 15px;
     padding-bottom: 10px;
