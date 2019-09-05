@@ -1077,12 +1077,15 @@ hr {
 
 @media (max-width: 460px) {
     .box-cuotas {
-        align-items: flex-end;
-        flex-direction: column;
+        flex-direction: row;
+    }
+
+    .box-cuotas .ui-selectonemenu {
+        width: 30px !important;
     }
 
     .box-cuotas span.cant-cuotas {
-        display: none !important;
+        font-size: 10px;
     }
 }
 
