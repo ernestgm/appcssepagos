@@ -1,6 +1,14 @@
 // $(document).foundation()
 $(document).ready(function() {
 
+    $(function(){
+        $(".resumen-aside .link-resumen").removeClass("item-scroll");
+        $(".resumen-aside .link-resumen").click(function(e){
+            event.preventDefault();
+            $(".resumen-aside").toggleClass("ampliar");
+            $("#panelResumenAside").toggleClass("ampliar");
+        });
+    });
 	// Scroll one page
 	$(function() {
 	    $('a.item-scroll').bind('click', function(event) {
