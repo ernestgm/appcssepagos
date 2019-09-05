@@ -740,9 +740,16 @@ hr {
     line-height: 1.1;
 }
 
-.box-afiliacion .desc-afiliacion{float: left;width: 85%;line-height: 0.5;}
+.box-afiliacion .desc-afiliacion {
+    float: left;
+    width: 85%; /* line-height: 0.5; */
+}
 
-.box .ui-datatable-tablewrapper table tr:not(.ui-datatable-selectable) .box-afiliacion .desc-afiliacion{margin-top: 6px;color: #8e8e8e;}
+.box .ui-datatable-tablewrapper table tr:not(.ui-datatable-selectable) .box-afiliacion .desc-afiliacion {
+    margin-top: 20px;
+    color: #8e8e8e;
+    height: 37px;
+}
 .box .ui-datatable-tablewrapper table tr:not(.ui-datatable-selectable) .box-afiliacion .desc-afiliacion span{color: #8e8e8e;}
 .box .ui-datatable-tablewrapper table tr:not(.ui-datatable-selectable) .box-afiliacion .afiliacion-estado{top: -14px;}
 .box .ui-datatable-tablewrapper table tr:not(.ui-datatable-selectable) .box-afiliacion .txt-cond:not(.desc-afiliacion){
