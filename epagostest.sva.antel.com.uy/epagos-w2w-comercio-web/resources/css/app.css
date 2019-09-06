@@ -814,9 +814,16 @@ hr {
     line-height: 1.1;
 }
 
-.box-afiliacion .desc-afiliacion{float: left;width: 85%;line-height: 0.5;}
+.box-afiliacion .desc-afiliacion {
+    float: left;
+    width: 85%;
+}
 
-.box .ui-datatable-tablewrapper table tr:not(.ui-datatable-selectable) .box-afiliacion .desc-afiliacion{margin-top: 6px;color: #8e8e8e;}
+.box .ui-datatable-tablewrapper table tr:not(.ui-datatable-selectable) .box-afiliacion .desc-afiliacion {
+    margin-top: 15px;
+    color: #8e8e8e;
+    height: 33px;
+}
 .box .ui-datatable-tablewrapper table tr:not(.ui-datatable-selectable) .box-afiliacion .desc-afiliacion span{color: #8e8e8e;}
 .box .ui-datatable-tablewrapper table tr:not(.ui-datatable-selectable) .box-afiliacion .afiliacion-estado{top: -14px;}
 .box .ui-datatable-tablewrapper table tr:not(.ui-datatable-selectable) .box-afiliacion .txt-cond:not(.desc-afiliacion){
@@ -1145,12 +1152,15 @@ hr {
 
 @media (max-width: 460px) {
     .box-cuotas {
-        align-items: flex-end;
-        flex-direction: column;
+        flex-direction: row;
+    }
+
+    .box-cuotas .ui-selectonemenu {
+        width: 30px !important;
     }
 
     .box-cuotas span.cant-cuotas {
-        display: none !important;
+        font-size: 10px;
     }
 }
 
