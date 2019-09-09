@@ -748,7 +748,7 @@ hr {
 .box .ui-datatable-tablewrapper table tr:not(.ui-datatable-selectable) .box-afiliacion .desc-afiliacion {
     margin-top: 20px;
     color: #8e8e8e;
-    height: 37px;
+    height: 34px;
 }
 .box .ui-datatable-tablewrapper table tr:not(.ui-datatable-selectable) .box-afiliacion .desc-afiliacion span{color: #8e8e8e;}
 .box .ui-datatable-tablewrapper table tr:not(.ui-datatable-selectable) .box-afiliacion .afiliacion-estado{top: -14px;}
@@ -792,6 +792,7 @@ hr {
 
     .box .ui-datatable-tablewrapper table tr:not(.ui-datatable-selectable) .box-afiliacion .desc-afiliacion {
         margin-top: -4px !important;
+        height: auto;
     }
 
     .box .ui-datatable-tablewrapper table tr:not(.ui-datatable-selectable) .box-afiliacion .txt-cond:not(.desc-afiliacion) {
@@ -815,6 +816,7 @@ hr {
     .section-footer {
         flex-direction: column;
         padding: 0 30px 10px !important;
+        align-items: flex-start;
     }
 }
 
