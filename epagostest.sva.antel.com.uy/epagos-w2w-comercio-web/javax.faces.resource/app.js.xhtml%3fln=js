@@ -1,16 +1,35 @@
 // $(document).foundation()
+
+var oldXHR = window.XMLHttpRequest;
+
+function newXHR() {
+    var realXHR = new oldXHR();
+    realXHR.addEventListener("readystatechange", function() {
+        if(realXHR.readyState==1){
+
+        }
+        if(realXHR.readyState==2){
+
+        }
+        if(realXHR.readyState==3){
+
+        }
+        if(realXHR.readyState==4){
+            setClickDetails();
+        }
+    }, false);
+    return realXHR;
+}
+window.XMLHttpRequest = newXHR;
+
 $(document).ready(function() {
 
     $(function(){
-        $(".resumen-aside .link-resumen").removeClass("item-scroll");
-        $(".resumen-aside .link-resumen").click(function(e){
-            event.preventDefault();
-            $(".resumen-aside").toggleClass("ampliar");
-            $("#panelResumenAside").toggleClass("ampliar");
-        });
+        setClickDetails();
     });
+
 	// Scroll one page
-	$(function() {
+	/*$(function() {
 	    $('a.item-scroll').bind('click', function(event) {
 	        var $anchor = $(this);
 	        $('html, body').stop().animate({
@@ -18,7 +37,7 @@ $(document).ready(function() {
 	        }, 1500, 'easeInOutExpo');
 	        event.preventDefault();
 	    });
-	});
+	});*/
 
 	 // Header fixed    
     $(function(){        
@@ -42,5 +61,36 @@ $(document).ready(function() {
     function getCurrentScroll() {
         return window.pageYOffset || document.documentElement.scrollTop;
     }
+
+
     
 });
+
+function setClickDetails(){
+
+        runAfterElementExists(".resumen-aside .link-resumen", function() {
+           $(".resumen-aside .link-resumen").bind('click',function(e){
+                      event.preventDefault();
+                      $(".resumen-aside").toggleClass("ampliar");
+                      $("#panelResumenAside").toggleClass("ampliar");
+                      $(".site-header").toggleClass("display_none");
+                      $(".btn-link.link-volver").toggleClass("display_none");
+                  });
+        });
+
+}
+
+function runAfterElementExists(jquery_selector,callback){
+    var checker = window.setInterval(function() {
+     //if one or more elements have been yielded by jquery
+     //using this selector
+     if ($(jquery_selector).length) {
+
+        //stop checking for the existence of this element
+        clearInterval(checker);
+
+        //call the passed in function via the parameter above
+        callback();
+        }}, 200); //I usually check 5 times per second
+}
+
