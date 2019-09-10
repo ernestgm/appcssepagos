@@ -171,6 +171,7 @@ main {
     margin-top: 115px;
     z-index: 2;
     display: block;
+    min-height: 370px;
 }
 main:after {
     content: " ";
