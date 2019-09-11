@@ -1,0 +1,461 @@
+/*
+	File theme:		Reset primefaces
+	Description: 	Styles based EPAGOS
+	Author: 		Diego Delbono
+	Version: 		1.0
+*/
+
+/*	Interaction states
+	------------------------------------------ */
+.ui-state-default,
+.ui-widget-header,
+.ui-widget-content,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+/*	Panel
+	------------------------------------------ */
+.ui-panel {
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+.ui-panel .ui-widget-header {
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+.ui-panel .ui-widget-header .ui-panel-title {
+    display: inline-block;
+    font-weight: 400;
+    text-shadow: none;
+    margin: 0;
+}
+
+.ui-panel .ui-widget-content {
+    border: none;
+    padding: 0;
+}
+
+/*	Buttons
+	------------------------------------------ */
+.ui-button.ui-state-default {
+    background: #FF8A05;
+    border: none;
+    box-shadow: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 0;
+    padding: 5px 15px;
+    text-shadow: none;
+    transition: background-color 0.25s ease-out, color 0.25s ease-out;
+}
+
+.ui-button.ui-state-default span {
+    color: white;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    /*    text-transform: uppercase;*/
+}
+
+.ui-button.ui-state-default:hover,
+.ui-button.ui-state-default:focus {
+    background: #d16f00;
+}
+
+.ui-button.ui-state-disabled {
+    background: #d8d8d8;
+    cursor: auto;
+    text-shadow: none;
+}
+
+.ui-button.button-link {
+    background: transparent;
+}
+
+.ui-button.button-link:hover,
+.ui-button.button-link:focus {
+    background: transparent;
+}
+
+.ui-button.button-link span {
+    color: #02599B;
+    font-size: 15px;
+}
+
+/*	Tables
+	------------------------------------------ */
+.ui-datatable table {
+    border: none;
+    width: 100%;
+}
+
+.ui-datatable table thead {
+    display: none;
+}
+
+.ui-datatable table tr,
+.ui-datatable table tr td {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    transition: all 0.3s ease;
+}
+
+.ui-datatable table tr.ui-widget-content {
+    border-bottom: 0.5px solid #cecece;
+    border-top: 0.5px solid #cecece;
+}
+
+.ui-datatable table tr.ui-widget-content:last-child {
+    border-bottom: 1px solid white;
+}
+
+.ui-datatable table tr td {
+    padding: 15px 30px;
+}
+
+.ui-datatable table tr td .ui-column-title {
+    display: block !important;
+}
+
+.ui-datatable .ui-datatable-data tr.ui-state-highlight {
+    background: #fffef5;
+    border: none;
+    border-top: 2px solid #FF8A05;
+    border-bottom: 2px solid #FF8A05 !important;
+    text-shadow: none;
+}
+
+.ui-datatable .ui-datatable-data tr.ui-state-highlight .logo-medio-pago,
+.ui-datatable .ui-datatable-data tr.ui-state-highlight .logos-grupo-2,
+.ui-datatable .ui-datatable-data tr.ui-state-highlight .logos-grupo-3 {
+    border: 2px solid #02599B;
+}
+
+.ui-datatable .ui-datatable-data tr.ui-state-hover {
+    background: #f5f5f5;
+    box-shadow: none;
+    border-bottom: 1px solid #cecece;
+}
+
+@media (max-width: 800px) {
+    .ui-datatable table tr {
+        display: flex;
+        padding: 10px 15px !important;
+    }
+
+    .ui-datatable table tr td {
+        display: inline-block !important;
+        padding: 0;
+        width: 100%;
+    }
+}
+
+.ui-panelgrid {
+    border: none;
+}
+
+.ui-panelgrid .ui-panelgrid-cell {
+    border: none;
+    padding: 0;
+}
+
+/*	Links
+	------------------------------------------ */
+.ui-commandlink {
+    color: #337ab7 !important;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 14px !important;
+}
+
+/*	List
+	------------------------------------------ */
+.ui-datalist {
+    text-align: left !important;
+}
+
+.ui-datalist .ui-datalist-header {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.ui-datalist .ui-datalist-header p {
+    font-weight: 700;
+}
+
+/*	List
+	------------------------------------------ */
+.ui-dialog {
+    background: white;
+    border: 2px solid #18265A;
+    box-shadow: none;
+    border-radius: 5px;
+    padding: 60px;
+}
+
+.ui-draggable .ui-dialog-titlebar {
+    text-align: center;
+}
+
+.ui-draggable .ui-dialog-titlebar .ui-dialog-title {
+    font-size: 22px;
+    float: none;
+}
+
+.ui-dialog .ui-dialog-content {
+    text-align: center;
+    padding: 0;
+}
+
+.ui-dialog .ui-dialog-content a {
+    color: #337ab7;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 14px !important;
+}
+
+/*	Overlay
+	------------------------------------------ */
+.ui-widget-overlay {
+    background: #091b33;
+    opacity: 0.8;
+}
+
+/*	Tooltip
+	------------------------------------------ */
+.ui-tooltip {
+}
+
+.ui-tooltip .ui-tooltip-text {
+    background: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.ui-tooltip .ui-tooltip-text.ui-shadow {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25) !important;
+}
+
+.ui-tooltip-right .ui-tooltip-arrow {
+    top: 50%;
+    left: -5px;
+    margin-top: -10px;
+    border-width: 10px 10px 10px 0;
+    border-right-color: #337ab7;
+}
+
+/*	Forms
+	------------------------------------------ */
+.ui-inputfield {
+    border-radius: 5px;
+    font-family: "Roboto Condensed", sans-serif !important;
+    font-size: 14px !important;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #cccccc !important;
+    /*box-shadow: inset 0 1px 1px rgba(0,0,0,.075) !important;*/
+    max-width: 300px !important;
+    transition: border-color 0.25s ease-out, background-color 0.25s ease-out;
+    width: 100%;
+}
+
+.ui-inputfield:hover,
+.ui-inputfield:focus {
+    border: 1px solid #02599B !important;
+}
+
+/* Checkbox */
+.ui-chkbox {
+    display: flex;
+    margin-right: 10px;
+}
+
+.ui-chkbox .ui-chkbox-box {
+    height: 20px;
+    width: 20px;
+}
+
+.ui-chkbox .ui-icon {
+    border-radius: 2px;
+    border: 1px solid #d3d3d3 !important;
+    height: 20px;
+    width: 20px;
+}
+
+.ui-chkbox .ui-state-active .ui-icon-check {
+    border: 1px solid #02599B !important;
+    position: relative;
+    text-indent: inherit;
+}
+
+.ui-chkbox .ui-state-active .ui-icon-check:after {
+    content: "\2713";
+    color: #02599B;
+    display: block;
+    font-weight: 600;
+    position: absolute;
+    height: 20px;
+    left: 0;
+    top: 0;
+    text-align: center;
+    width: 18px;
+}
+
+.ui-chkbox .ui-chkbox-label {
+    font-family: "Roboto Condensed", sans-serif !important;
+    font-size: 15px !important;
+    margin-left: 15px !important;
+    line-height: 20px !important;
+}
+
+/* Small input */
+.small-input {
+    max-width: 162px !important;
+}
+
+@media (max-width: 640px) {
+    .ui-inputfield,
+    .small-input {
+        max-width: 100% !important;
+    }
+}
+
+/*	Select Menu
+	------------------------------------------ */
+.ui-selectonemenu {
+    border: 1px solid #d3d3d3 !important;
+    background: transparent !important;
+    border-radius: 5px;
+    height: 40px;
+    padding: 0 10px;
+    min-width: 60px !important;
+    max-width: 300px;
+}
+
+.ui-selectonemenu.small-input {
+    width: 165px !important;
+}
+
+@media (max-width: 640px) {
+    .ui-selectonemenu,
+    .ui-selectonemenu.small-input {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}
+
+.ui-selectonemenu:hover,
+.ui-selectonemenu:focus {
+    border: 1px solid #02599B !important;
+}
+
+.ui-selectonemenu .ui-selectonemenu-trigger {
+    width: 25px;
+}
+
+.ui-selectonemenu .ui-selectonemenu-label {
+    background: transparent;
+    box-shadow: none;
+    border: none !important;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 !important;
+    padding: 0;
+    text-shadow: none;
+}
+
+.ui-selectonemenu .ui-selectonemenu-trigger .ui-icon {
+    background: url(../assets/arrow-down.svg) no-repeat left center;
+    background-size: 12px;
+}
+
+.ui-selectonemenu-panel {
+    border-radius: 5px;
+    border: 1px solid #d3d3d3 !important;
+    background: white !important;
+    box-shadow: none;
+}
+
+.ui-selectonemenu-panel ul {
+    background: transparent !important;
+}
+
+.ui-selectonemenu-panel ul li {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 15px;
+}
+
+.ui-selectonemenu-panel ul li.ui-state-highlight {
+    background: #efefef !important;
+    box-shadow: none !important;
+    text-shadow: none;
+}
+
+.ui-selectonemenu-panel ul li:hover {
+    box-shadow: none !important;
+    text-shadow: none;
+}
+
+.ui-datatable table .ui-selectonemenu {
+    float: right;
+}
+
+/*	Input Errores
+	------------------------------------------ */
+.ui-state-error {
+    background: transparent !important;
+    border: 1px solid #a24340 !important;
+}
+
+.ui-state-error.ui-selectonemenu-trigger {
+    border: none !important;
+}
+
+.form-group .ui-message-error {
+    background: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.form-group .ui-message-error .ui-message-error-icon {
+    display: none;
+}
+
+.form-group .ui-message-error .ui-message-error-detail {
+    color: #b94a48;
+    display: block;
+    font-size: 13px !important;
+    margin: 5px 0;
+}
+
+/*	Messages Error
+	------------------------------------------ */
+.msg-error {
+    border: 1px solid red !important;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+}
+
+.msg-error li {
+    color: red;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+/*  List Grid
+    ------------------------------------------ */
+.ui-g {
+    margin-bottom: 10px;
+}
