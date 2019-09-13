@@ -491,7 +491,7 @@ hr {
 
 .box .ui-widget-header {
     padding: 20px 0 !important;
-    border-bottom: 1px solid #cecece;
+    /* border-bottom: 1px solid #cecece; */
     margin: -2px 20px;
 }
 
@@ -570,12 +570,13 @@ hr {
 /* Box + Table*/
 .box .ui-datatable-tablewrapper{
     margin: 0 20px;
+    overflow: hidden;
 }
 
 .box .ui-datatable-tablewrapper table{margin-bottom: 20px;}
 
-.box .ui-datatable-tablewrapper table tr{
-
+.box .ui-datatable-tablewrapper table tr {
+    overflow: visible;
 }
 
 .box .ui-datatable-tablewrapper table tr:not(.ui-datatable-selectable){
@@ -592,11 +593,19 @@ hr {
 }
 
 .ui-datatable .ui-datatable-data tr.ui-state-hover {
-    background: #fff0f7;
+    background: #fff7f0;
     box-shadow: none;
-    border-top: 2px solid #FF9c44 !important;
-    border-bottom: 2px solid #FF9c44 !important;
+    /* border-top: 1px; */
+    /* border-bottom: 0; */
+    /* position: relative; */
 }
+
+.ui-datatable .ui-datatable-data tr.ui-state-hover td {
+    border-top: 1px solid #FF9c44;
+    border-bottom: 1px solid #FF9c44 !important;
+    position: relative;
+}
+
 
 .ui-datatable .ui-datatable-data tr.ui-state-hover .logo-medio-pago{
     border: 2px solid #FF9c44;
@@ -1175,6 +1184,10 @@ hr {
     margin: 0;
     padding: 0 15px;
     font-size: 14px !important;
+    }
+
+    .box.panel-collapse {
+        border-bottom: 2px solid #cecece !important;
     }
 }
 

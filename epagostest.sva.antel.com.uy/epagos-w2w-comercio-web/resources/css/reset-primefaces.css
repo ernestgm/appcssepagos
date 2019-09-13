@@ -110,8 +110,9 @@
 }
 
 .ui-datatable table tr.ui-widget-content{
-    border-bottom: 0.5px solid #cecece;
+    /* border-bottom: 0.5px solid #cecece; */
     border-top: 0.5px solid #cecece;
+    position: relative;
 }
 
 .ui-datatable table tr.ui-widget-content:last-child{
@@ -144,6 +145,7 @@
     background: #f5f5f5;
     box-shadow: none;
     border-bottom: 1px solid #cecece;
+    overflow: visible;
 }
 
 @media (max-width: 800px){
