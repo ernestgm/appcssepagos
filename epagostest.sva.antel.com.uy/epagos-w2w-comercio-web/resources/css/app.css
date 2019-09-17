@@ -189,7 +189,7 @@ main:after {
             padding: 0;
             margin-top: 95px;
             background: none;
-            margin-bottom: 190px;
+            margin-bottom: 220px;
         }
     }
 
@@ -277,9 +277,35 @@ aside .ui-button {
         top: 0;
     }
     aside#panelResumenAside {
-        margin-bottom: 100px;
-        border: 1px solid rgba(99, 99, 99, 0.25);
         margin: 13px;
+        position: fixed;
+        bottom: 88px;
+        top: auto;
+        z-index: 10;
+        height: 71px;
+        overflow: hidden;
+        box-shadow: none;
+        margin: 0;
+        padding: 0 15px;
+        transition: all 0.3s ease;
+    }
+
+    aside#panelResumenAside.ampliar {
+        z-index: 11;
+        height: 75%;
+        width: 72%;
+        overflow: visible;
+        background: transparent;
+    }
+
+    aside#panelResumenAside h3, aside#panelResumenAside h4, aside#panelResumenAside hr {
+        display: none;
+    }
+
+    aside#panelResumenAside.ampliar h3 {
+        display: block;
+        margin-top: -57px;
+        margin-bottom: 70px;
     }
 }
 
@@ -292,13 +318,21 @@ aside .ui-button {
 @media (max-width: 800px) {
 
     .resumen-aside {
-        background: #e3e3e3;
+        background: #fff;
         display: block;
         position: fixed;
         padding: 15px;
         bottom: 0;
         left: 0;
         right: 0;
+        height: 220px;
+        box-shadow: 0px 12px 11px 10px;
+        transition: all 0.3s ease;
+    }
+
+    .resumen-aside.ampliar {
+        height: 100%;
+        z-index: 10;
     }
 
     .resumen-aside h3,
@@ -324,6 +358,17 @@ aside .ui-button {
         margin: 0 0 5px 5px;
         text-align: right;
         text-decoration: none;
+        position: absolute;
+        top: -120px;
+        right: 15px;
+    }
+
+    .resumen-aside.ampliar .link-resumen {
+        top: 7px;
+    }
+
+    .resumen-aside.ampliar .link-resumen:after {
+        transform: rotate(0deg);
     }
 
     .resumen-aside .link-resumen:after {
@@ -333,13 +378,58 @@ aside .ui-button {
         display: inline-block;
         height: 10px;
         width: 20px;
+        transform: rotate(180deg);
+        transition: all 0.3s ease;
     }
 
     .resumen-aside .box-button {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        align-content: end;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        padding: 0 15px 30px;
+    }
+
+    .resumen-aside.ampliar .box-button {
+        height: 90%;
+        top: 39px;
+        z-index: 9000;
+    }
+
+    .resumen-aside.ampliar .box-button button {
+        bottom: 0;
+        position: absolute;
+        left: 0;
+    }
+
+    .resumen-aside .box-button button {
+        width: 100%;
+    }
+
+    .resumen-aside.ampliar .ui-panel-content {
+        position: relative;
+        height: 100%;
+    }
+
+    .resumen-aside .ui-panel-content .col-xs-6 {
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+
+    .resumen-aside .ui-panel-content h4 {
+        color: #222;
+        border-bottom: 1px solid #cecece;
+        padding-bottom: 15px;
+        padding-top: 4px;
+        font-weight: 400;
+    }
+
+    .resumen-aside.ampliar .ui-panel-content .col-xs-6 {
+        margin-top: 40px;
+    }
+
+    .resumen-aside .ui-panel-content p {
+        display: none;
     }
 
     .resumen-aside .ui-button {
@@ -515,9 +605,9 @@ hr {
 }
 
 .box .ui-widget-header span {
-    color: #FF8A05;
-    font-family: "Roboto Condensed", sans-serif;
-    font-weight: 400;
+    color: #162456;
+    font-family: "Roboto Light", sans-serif;
+    font-weight: 100;
     font-size: 20px;
     /* width: 100%; */
 }
@@ -752,13 +842,13 @@ hr {
 
 .box-afiliacion .desc-afiliacion {
     float: left;
-    width: 85%; /* line-height: 0.5; */
+    width: 85%;
 }
 
 .box .ui-datatable-tablewrapper table tr:not(.ui-datatable-selectable) .box-afiliacion .desc-afiliacion {
-    margin-top: 20px;
+    margin-top: 15px;
     color: #8e8e8e;
-    height: 34px;
+    height: 33px;
 }
 .box .ui-datatable-tablewrapper table tr:not(.ui-datatable-selectable) .box-afiliacion .desc-afiliacion span{color: #8e8e8e;}
 .box .ui-datatable-tablewrapper table tr:not(.ui-datatable-selectable) .box-afiliacion .afiliacion-estado{top: -14px;}
@@ -857,6 +947,7 @@ hr {
     font-size: 20px;
     margin-right: 7px;
     color: #162456;
+    font-family: "Roboto Light", sans-serif;
 }
 
 .header-section.header-inline img {
